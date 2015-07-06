@@ -22,11 +22,11 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>21F9271AAD252C201B541F13513047F31DD5A554</key>
-		<string>../../../../../gsource/DPC</string>
+		<string>../../../../gsource/DPC</string>
 		<key>AE0C4D41A044036F82DC0C2EBAE7891AAB4C35CB</key>
 		<string>../../..</string>
 		<key>B03754EEFE8440C262401C7FEDFBE4CF063319DF</key>
-		<string>../../../../../gsource/cellScopeRefocusing</string>
+		<string>../../../../gsource/cellScopeRefocusing</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/Waller-Lab/CompCellScopeIOS</string>
@@ -66,7 +66,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>21F9271AAD252C201B541F13513047F31DD5A554</string>
 			<key>IDESourceControlWCCName</key>
-			<string>quantitativeDPC</string>
+			<string>DPC</string>
 		</dict>
 	</array>
 </dict>

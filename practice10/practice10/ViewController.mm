@@ -116,6 +116,9 @@ std::vector<cv::Mat> refocusedOutput;
     results = refocus(&stringVector, &imageVector, curMaxAngle);
     CFTimeInterval fooElapsed = CACurrentMediaTime() - fooStart;
     
+    
+    std::cout << results.size() << std::endl;
+    
     refocusedOutput = results;
     
     imageVector.clear();
@@ -130,6 +133,7 @@ std::vector<cv::Mat> refocusedOutput;
     std::vector<cv::Mat> resultsVector2;
 
 
+    refocusedOutput.clear();
     
     for (int i = 0; i < results.size()/3; i ++){
         refocusedOutput.insert(refocusedOutput.begin()+i, results.at(i*3));
@@ -140,9 +144,9 @@ std::vector<cv::Mat> refocusedOutput;
     for (int i = 0; i < results.size()/3; i ++){
         refocusedOutput.insert(refocusedOutput.begin()+i+2*results.size()/3, results.at(i*3+2));
     }
-    refocusedOutput = resultsVector2;
+//    refocusedOutput = resultsVector2;
     
-    results.clear();
+//    results.clear();
 }
 
 - (IBAction)incrementer:(UIStepper *)sender {
@@ -152,6 +156,7 @@ std::vector<cv::Mat> refocusedOutput;
 }
 
 - (IBAction)refocusViewer:(UIStepper *)sender {
+    std::cout<<refocusedOutput.size()<<std::endl;
     if (refocusedOutput.size()!=0){
         int value = [sender value];
         std::cout << refocusedOutput.size() << std::endl;
